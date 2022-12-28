@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans:wght@300;400;700&family=Work+Sans:ital,wght@0,200;0,400;0,700;0,800;1,600&display=swap" rel="stylesheet">
+     
+    <!-- css file -->
+    <link rel="stylesheet" href="main.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <div class="page">
+        <!-- start setting box  -->
+        <div class="setting-box">
+            <div class="toggle">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="setting-container">
+                <div class="option-box"> 
+                    <h4>colors</h4>
+                    <ul class="color-options">
+                        <li data-color="#ff9800"  class="active"></li>
+                        <li data-color="#e91e63"></li>
+                        <li data-color="#009688"></li>
+                        <li data-color="#03a9f4"></li>
+                    </ul>
+                </div>
+               
+                <div class="option-box">
+                    <div class="random-background">
+                        <h4>Random Background</h4>
+                        <span data-random="yes" class="active yes">Yes</span>
+                        <span data-random="no" class="no">No</span>
+                    </div>
+                </div>
+                <div class="option-box">
+                    <div class="show-bullets">
+                        <h4>show bullets</h4>
+                        <span data-display="yes" class="active yes">show</span>
+                        <span data-display="no" class="no">hide</span>
+                    </div>
+                </div>
+                
+                    <button class="reset">Reset</button>
+                
+            </div>
+        </div>
+
+        <!-- bullets navbar  -->
+        <div class="bullets-nav">
+            <div class="bullet" data-section=".about">
+                <div class="tool-tib">About</div>
+            </div>
+            <div class="bullet" data-section=".skills">
+                <div class="tool-tib">skills</div>
+            </div>
+            <div class="bullet" data-section=".gallery">
+                <div class="tool-tib">Our Gallery</div>
+            </div>
+            <div class="bullet" data-section=".timeline">
+                <div class="tool-tib">timeline</div>
+            </div>
+            
+        </div>
+        <!-- end setting box  -->
+
+        <!-- start landing section  -->
+        <div class="landing">
+            <div class="overlay"></div>
+            
+            <div class="header">
+                <div class="container">
+                    <div class="logo"><span class="aa">2A </span><span>Agency</span></div>
+                    <div class="toggel">
+                        <i class="fa-solid fa-bars"></i>
+                        <!-- menue to small screens  -->
+                        <ul class="menue">
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-container">
+                        <ul class="links">
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            <div class="intro-txt">
+                <h2>we are <span>creative</span> agency</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+
+        <!-- about us section  -->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="info-box">
+                    <h2>about us</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio esse facere tempora libero. Assumenda magni quibusdam labore odit, numquam itaque distinctio quam vel. Placeat alias at ut optio totam consectetur.</p>
+                </div>
+                <div class="img-box">
+                    <img src="images/about.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- skills section  -->
+        <div class="skills" id="skills">
+            <div class="container">
+                <h2>our skills</h2>
+                <div class="skill-box">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-progress">
+                        <span data-progress="80%"></span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-progress">
+                        <span data-progress="70%"></span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-name">Javascript</div>
+                    <div class="skill-progress">
+                        <span data-progress="85%"></span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-name">PHP</div>
+                    <div class="skill-progress">
+                        <span data-progress="85%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gallery section  -->
+        <div class="gallery" id="gallery">
+            <div class="container">
+                <h2>our gallery</h2>
+                <div class="imgs-box">
+                    <img src="images/01.jpg" alt="img-1">
+                    <img src="images/02.jpg" alt="img-2">
+                    <img src="images/03.jpg" alt="img-3">
+                    <img src="images/04.avif" alt="img-4">
+                    <img src="images/05.webp" alt="img-5">
+                    <img src="images/06.jpg" alt="img-6">
+                    <img src="images/07.jpg" alt="img-7">
+                    <img src="images/08.jpg" alt="img-8">
+                    <img src="images/09.jpg" alt="img-9">
+                    <img src="images/10.png" alt="img-10">
+                </div>
+            </div>
+        </div>
+
+        <!-- timeline section  -->
+        <div class="timeline" id="timeline">
+            <div class="container">
+                <h2>timeline</h2>
+                <div class="content">
+                    <div class="left">
+                        <div class="text">
+                            <h4>completed tasks</h4>
+                            <p>Lorem ipsum dolor, sit ametonem tenetur, ullam nemo, aperiam aspernatur ducimus? Deserunt totam veritatis voluptatem placeat.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="text">
+                            <h4>completed tasks</h4>
+                            <p>Lorem ipsum dolor, sit ametonem tenetur, ullam nemo, aperiam aspernatur ducimus? Deserunt totam veritatis voluptatem placeat.</p>
+                        </div>
+                    </div>
+                    <div class="year">2018</div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <div class="text">
+                            <h4>completed tasks</h4>
+                            <p>Lorem ipsum dolor, sit ametonem tenetur, ullam nemo, aperiam aspernatur ducimus? Deserunt totam veritatis voluptatem placeat.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="text">
+                            <h4>completed tasks</h4>
+                            <p>Lorem ipsum dolor, sit ametonem tenetur, ullam nemo, aperiam aspernatur ducimus? Deserunt totam veritatis voluptatem placeat.</p>
+                        </div>
+                    </div>
+                    <div class="year">2019</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- our feature section  -->
+        <div class="our-features" id="features">
+            <div class="container">
+                <h2>our features</h2>
+                <div class="content">
+                    <div class="feat-box">
+                        <img src="images/evelop.webp" alt="">
+                        <h3>development</h3>
+                        <p>Lorem ipsum dolor sit, amet aliquid praesentium tenetur sit.</p>
+                    </div>
+                    <div class="feat-box">
+                        <img src="images/responsive.jpg" alt="">
+                        <h3>design</h3>
+                        <p>Lorem ipsum dolor sit, amet aliquid praesentium tenetur sit.</p>
+                    </div>
+                    <div class="feat-box">
+                        <img src="images/data analysis.png" alt="">
+                        <h3>data analysis</h3>
+                        <p>Lorem ipsum dolor sit, amet aliquid praesentium tenetur sit.</p>
+                    </div>
+                    <div class="feat-box">
+                        <img src="images/thinking.jpg" alt="">
+                        <h3>thinking</h3>
+                        <p>Lorem ipsum dolor sit, amet aliquid praesentium tenetur sit.</p>
+                    </div>
+                    <div class="feat-box">
+                        <img src="images/data analysis.png" alt="">
+                        <h3>problem solving</h3>
+                        <p>Lorem ipsum dolor sit, amet aliquid praesentium tenetur sit.</p>
+                    </div>
+                    <div class="feat-box">
+                        <img src="images/responsive.jpg" alt="">
+                        <h3>responsive</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit, aliqui tenetur sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- testimonials section  -->
+        <div class="testimonials" id="testimonials">
+            <h2>testimonials</h2>
+            <h3>what our customers are saying..</h3>
+            <div class="container">
+                <div class="testi-box">
+                    <p class="testi-text">good person and i trust him. i recommend this to everyone to choose this agency.</p>
+                    <div class="person-info">
+                        <img src="images/testi.png" alt="">
+                        <h4>ahmed hassan</h4>
+                    </div>
+                </div>
+
+                <div class="testi-box">
+                    <p class="testi-text">excellent project and i received my work in no time. i recommend everyone to choose this agency.</p>
+                    <div class="person-info">
+                        <img src="images/testi-1.jpg" alt="">
+                        <h4>christina fouad</h4>
+                    </div>
+                </div>
+
+                <div class="testi-box">
+                    <p class="testi-text">i received my work in no time. i will return this chosen soon. so,i recommend this to everyone.</p>
+                    <div class="person-info">
+                        <img src="images/testi-2.jpg" alt="">
+                        <h4>ali mahmoud</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- contact us section -->
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <div class="container">
+                <div class="overlay"></div>
+                <form action="">
+                    <div class="left">
+                        <input type="text" placeholder="your Name" name="user-name">
+                        <input type="number" placeholder="your Number" name="phone">
+                        <input type="email" placeholder="your Email" name="email">
+                        <input type="text" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="right">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <input class="submit" type="submit" value="send">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
